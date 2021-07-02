@@ -1,0 +1,53 @@
+input[type="range"] {
+    width:400px;
+  }
+
+  
+  .brand-logo {
+      float : left ;
+  }
+#nav {
+    background-color: #36393F;
+    height : 131%;
+}
+.container {
+  display : flex ;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#button {
+  width: 100%;
+}
+
+.field-form {
+  width: 600px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  
+  .field-form {
+    width: auto;
+  }
+}
+
+#height-value {
+  width:400px;
+}
+
+
+#weight-value {
+  width:400px;
+}
+
+input[type="text"]{
+  width: 600px;
+  display : block ;
+  border : solid gray ;
+  pointer-events: none;
+  text-align: center;
+}
+input[type="text"]:active {
+  border-bottom: none;
+}

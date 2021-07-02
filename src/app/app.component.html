@@ -1,0 +1,97 @@
+
+<app-navbar></app-navbar>
+  <div>
+    <h5>What skis to buy? The amount of skis on the market to choose from can be overwhelming. We assure you that there is a great match for you out there. We will guide you to YOUR perfect match.
+      Find your perfect match in a few simple steps:
+      </h5>
+  </div>
+
+<div class="container">
+  <form>
+  <fieldset class="field-form">
+  <legend class="title"><h4>Personnal information</h4></legend>
+  <h5 for="group1">Gender :</h5>
+  <p>
+    <label>
+      <input name="group1" type="radio" checked />
+      <span>Male :</span>
+    </label>
+    <label>
+      <input name="group1" type="radio" />
+      <span>Female :</span>
+    </label>
+    <label>
+      <input class="with-gap" name="group1" type="radio"  />
+      <span>Other :</span>
+    </label>
+  </p>
+  <h5 for="group1">Your Height :</h5>
+  <p class="range-field">
+    <input type="range" id="range_height" min="130" max="210" step="1"  oninput="this.nextElementSibling.value = this.value +' cm'"/> 
+    <input  type="text"id="output-weight" /> <output for ="range_height" ></output>
+    
+  </p>
+  <h5 for="group1">Your Weight :</h5>
+  <p class="range-field">
+    <input type="range" id="range_weight" min="20" max="200" step="0.5"  oninput="this.nextElementSibling.value = this.value +' Kg'" />
+    <input type="text" id="output-height" /><output for="range_weight" ></output>
+    
+  </p>
+  <h5 for="group1">Terrain type :</h5>
+  <p>
+    <label>
+      <input name="group4" type="radio" checked />
+      <span>All-mountain 	&nbsp;	&nbsp;</span>
+    </label>
+    <label>
+      <input name="group4" type="radio" />
+      <span>Powder	&nbsp;	&nbsp; </span>
+    </label>
+    <label>
+      <input class="with-gap" name="group4" type="radio"  />
+      <span>Backcountry	&nbsp;	&nbsp; 
+      </span>
+    </label>
+    <label>
+      <input class="with-gap" name="group4" type="radio"  />
+      <span>Steep	&nbsp;	&nbsp;</span>
+    </label>
+  </p>
+  <div class="Riding">
+    <h5 for="group1">Riding	&nbsp;	&nbsp;</h5>
+  <p>
+    <label>
+      <input class="with-gap" name="group2" type="radio"  />
+      <span>Fast</span>
+    </label>
+    <label>
+      <input class="with-gap" name="group2" type="radio" checked />
+      <span>Slow</span>
+    </label>
+  </p>
+  </div>
+  <div class="Turns">
+    <h5 for="group1">Turns :</h5>
+  <p>
+    <label>
+      <input class="with-gap" name="group3" type="radio" checked />
+      <span>Long </span>
+    </label>
+    <label>
+      <input class="with-gap" name="group3" type="radio" checked />
+      <span>Short </span>
+    </label>
+  </p>
+  </div>
+  
+  <a (click)="button_clicked()" id = "button" class="waves-effect waves-light btn-large">Confirm</a>
+  
+  </fieldset>
+  
+  
+
+  </form>
+</div>
+<app-content></app-content>
+<app-footer></app-footer>
+
